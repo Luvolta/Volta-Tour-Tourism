@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*=========================================General=========================================*/
+:root {
+    --primary-color: #775a13;
+    --secondary-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+body{
+    background-color: var(--primary-color);
+}
+/*=========================================Header=========================================*/
+header {
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background: transparent;
+    background-image: url('img/avion-response.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    position: relative;
+    overflow: hidden;
+}
+.div-oscureser{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000085;
+}
+header nav{
+    width: 100%;
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    position: relative;
+    z-index: 15;
+}
+header nav ul	{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px;
+}
+header nav ul li:hover{
+    transform: scale(1.5);
+    background-color: #0000007a;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.articleHeader{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90%;
+    padding: 1rem;
+    border: none;
+    position: relative;
+    z-index: 15;
+   
+}
+.articleHeader h1{
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: #0000006e;
+    border-radius: 15px;
+    padding: 5px;
+}
+.articleHeader p{
+    margin-top: 4rem;
+    font-size: 1.5rem;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #0000006e;
+}
+
+span{
+    color: #ffffff;
+    font-weight: 700;
+}
+/*=========================================Main=========================================*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+main p {
+    width: 80%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+section {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+.modal{
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    transition: ease 0.3s;
+    width: 100%;
+    height: 6rem; 
+    transition: .3s ease-in-out;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}	
+.modal div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00000085;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3 ease-in-out;
+}
+.modal p{
+    display: none;
+}
+.modal:hover{
+    height: 15rem;
+}
+.modal:hover div{
+    background: #0000001b;
+}
+.modal:hover div h3{
+    display: none;
+}
+.modal:hover p{
+    display: block;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+.card{
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #0000006c;
+    
+}
+.card img{
+    width: 100%;
+    height: 60%;
+    padding: 10px;
+    
+}
+.card p{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 15px;
+    overflow-y: hidden;
+}
+ article {
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    transition: ease 0.3s;
+    width: 100%;
+    height: 6rem;
+ }
+
+.destino1 {
+    background-image: url('img/pexels-apasaric-1285625.jpg');
+}
+
+.destino2 {
+    background-image: url('img/pexels-simonmigaj-951076.jpg');
+}
+
+.destino3 {
+    background-image: url('img/pexels-pixabay-417344.jpg');
+}
+
+.actividad1 {
+    background-image: url('img/pexels-asadphoto-1268855.jpg');
+}
+
+.actividad2 {
+    background-image: url('img/pexels-conojeghuo-211049.jpg');
+}
+
+.actividad3 {
+    background-image: url('img/pexels-ninauhlikova-725255.jpg');
+}
+
+#destinos{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.modalParra{
+    font-size: 16px;
+    padding: 2px;
+    background-color: #0000006c;
+    border-radius: 15px;
+}
+#actividades{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+#atracciones{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 3rem;
+}
+
+#consejos {
+    background-color: var(--secondary-color);
+    padding: 40px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0px;
+}
+
+#consejos h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.consejo {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    
+}
+.consejo p{
+    width: 100%;
+}
+.consejo:hover {
+    transform: translateY(-5px);
+}
+
+.consejo h3 {
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+.consejo p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+/*=========================================Footer=========================================*/
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/*=========================================@Media=========================================*/
+
+@media screen and (min-width: 768px) {
+
+    
+    header{
+        background-image: url('img/avion-response.jpg');
+        position: relative;
+        overflow: hidden;
+    }
+    nav{
+        position: relative;
+        z-index: 15;
+    }
+    .articleHeader{
+        position: relative;
+        z-index: 15;
+    }
+    .div-oscureser{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #00000085;
+    }
+    #atracciones{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    .card{
+        width: 33%;
+        height: 25rem;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        border: none;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: #0000006c;
+    }
+
+    .card img{
+        width: 100%;
+        height: 60%;
+    }
+    .card p{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        overflow: hidden;
+        color: #fff;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header nav ul{
+        font-size: 25px;
+        gap: 4rem;
+    }
+    main p{
+        width: 60%;
+    }
+    .card{
+        width: 23%;
+    }
+    .consejo {
+        background-color: var(--primary-color);
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    
+    .consejo:hover {
+        transform: translateY(-5px);
+    }
+    
+    .consejo h3 {
+        margin-bottom: 10px;
+        color: var(--secondary-color);
+    }
+    
+    .consejo p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #ffffff;
+        width: 100%;
+    }
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 30px 0;
+    }
+    
+    .container {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .footer-content {
+        width: 50vw;
+        flex: 1;
+        margin-right: 20px;
+    }
+}
